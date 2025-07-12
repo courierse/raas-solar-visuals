@@ -1,6 +1,6 @@
-
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { useToast } from '../hooks/use-toast';
@@ -16,8 +16,7 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Basic validation
+
     if (!formData.name || !formData.email || !formData.subject || !formData.message) {
       toast({
         title: "Please fill all fields",
@@ -27,13 +26,11 @@ const Contact = () => {
       return;
     }
 
-    // Simulate form submission
     toast({
       title: "Message sent successfully!",
       description: "We'll get back to you within 24 hours.",
     });
 
-    // Reset form
     setFormData({
       name: '',
       email: '',
@@ -49,10 +46,23 @@ const Contact = () => {
     });
   };
 
+  // Google Map configuration
+  const mapContainerStyle = {
+    width: '100%',
+    height: '100%'
+  };
+
+  // Updated coordinates for Greater Noida office
+  // 28.5501377,77.4512894
+  const center = {
+    lat: 28.5501377,
+    lng: 77.4512894,
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="pt-24 pb-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-transparent to-yellow-500/20"></div>
@@ -164,27 +174,32 @@ const Contact = () => {
               {/* Map Container */}
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
                 <h3 className="text-2xl font-bold text-white mb-6">Visit Our Office</h3>
-                <div className="aspect-video bg-slate-700 rounded-xl flex items-center justify-center relative overflow-hidden">
-                  {/* Placeholder map with interactive styling */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-yellow-500/20"></div>
-                  <div className="relative z-10 text-center">
-                    <MapPin className="w-16 h-16 text-yellow-400 mx-auto mb-4" />
-                    <p className="text-white font-semibold">Interactive Map</p>
-                    <p className="text-blue-200 text-sm">279, Khera Chauganpur, Ecotech-3rd, Phase-1, Greater Noida, UTTAR PRADESH, 201306</p>
-                  </div>
-                  
-                  {/* Animated location pin */}
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <div className="aspect-video rounded-xl relative overflow-hidden">
+                  <LoadScript googleMapsApiKey="AIzaSyDB5MQFrIUmWf2sshK7dZOGVBZmQVEB1KY">
+                    <GoogleMap
+                      mapContainerStyle={mapContainerStyle}
+                      center={center}
+                      zoom={15}
+                    >
+                      <Marker position={center} />
+                    </GoogleMap>
+                  </LoadScript>
+
+                  {/* Animated location pin overlay */}
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
                     <div className="w-6 h-6 bg-yellow-400 rounded-full animate-pulse"></div>
                     <div className="w-12 h-12 bg-yellow-400/30 rounded-full animate-ping absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
                   </div>
                 </div>
+                <p className="text-blue-200 text-sm mt-4 text-center">
+                  279, Khera Chauganpur, Ecotech-3rd, Phase-1, Greater Noida, UTTAR PRADESH, 201306
+                </p>
               </div>
 
               {/* Contact Information */}
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 space-y-6">
                 <h3 className="text-2xl font-bold text-white mb-6">Get in Touch</h3>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-start space-x-4">
                     <div className="bg-gradient-to-r from-yellow-500 to-orange-600 p-3 rounded-lg flex-shrink-0">
@@ -194,7 +209,7 @@ const Contact = () => {
                       <h4 className="text-white font-semibold mb-1">Address</h4>
                       <p className="text-blue-200">
                         279, Khera Chauganpur, Ecotech-3rd, Phase-1, <br />
-                       Greater Noida, UTTAR PRADESH, 201306
+                        Greater Noida, UTTAR PRADESH, 201306
                       </p>
                     </div>
                   </div>
@@ -205,8 +220,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="text-white font-semibold mb-1">Phone</h4>
-                      <p className="text-blue-200">+91  9773579770</p>
-                      {/* <p className="text-blue-200">+91 098 765 4321</p> */}
+                      <p className="text-blue-200">+91 9773579770</p>
                     </div>
                   </div>
 
