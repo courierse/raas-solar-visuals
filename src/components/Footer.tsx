@@ -85,20 +85,20 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-yellow-400 mt-1 flex-shrink-0" />
                 <div className="text-blue-200">
-                  <p>Industrial Area, Sector 5</p>
-                  <p>New Delhi, India - 110001</p>
+                  <p> 279, Khera Chauganpur, Ecotech-3rd, Phase-1,</p>
+                  <p>Greater Noida, India - 201306</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-yellow-400" />
                 <a href="tel:+911234567890" className="text-blue-200 hover:text-yellow-400 transition-colors duration-300">
-                  +91 123 456 7890
+                  +91 9773579770
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-yellow-400" />
                 <a href="mailto:info@raasengineers.com" className="text-blue-200 hover:text-yellow-400 transition-colors duration-300">
-                  info@raasengineers.com
+                  raasengineer@gmail.com
                 </a>
               </div>
             </div>

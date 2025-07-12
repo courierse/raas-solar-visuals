@@ -10,61 +10,61 @@ const ProductSlider = () => {
       id: 1,
       name: "Main LT Panel",
       description: "High-quality Main Low Tension electrical panels for industrial applications",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop"
+      image: "images/lt-panels.jpeg"
     },
     {
       id: 2,
       name: "APFC Panel",
       description: "Automatic Power Factor Correction panels for power optimization",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&h=400&fit=crop"
+      image: "images/apfc-panels.png"
     },
     {
       id: 3,
       name: "Control Panel",
       description: "Advanced control panels for industrial automation and monitoring",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop"
+      image: "images/electric-control-panel.webp"
     },
     {
       id: 4,
       name: "Solar ACDB",
       description: "Solar AC Distribution Boxes for solar power systems",
-      image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=600&h=400&fit=crop"
+      image: "images/acdb_box.webp"
     },
     {
       id: 5,
       name: "VFD Panel",
       description: "Variable Frequency Drive panels for motor control applications",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop"
+      image: "images/vfd-control-panel.png"
     },
     {
       id: 6,
       name: "Distribution Panel",
       description: "Electrical distribution panels for power distribution systems",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&h=400&fit=crop"
+      image: "images/distributor_panel.jpg"
     },
     {
       id: 7,
       name: "Solar DCDB",
       description: "Solar DC Distribution Boxes for photovoltaic systems",
-      image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=600&h=400&fit=crop"
+      image: "images/dcdb_box.png"
     },
     {
       id: 8,
       name: "PLC Automation Panel",
       description: "PLC-based automation and control systems",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop"
+      image: "images/plc_panel.jpeg"
     },
     {
       id: 9,
       name: "AMF Panel",
       description: "Auto Mains Failure panels for backup generator systems",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop"
+      image: "images/amf_panel.webp"
     },
     {
       id: 10,
       name: "Solar String Monitoring",
       description: "Advanced solar string monitoring and management systems",
-      image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=600&h=400&fit=crop"
+      image: "images/solar_string_monitoring.jpg"
     }
   ];
 
@@ -85,7 +85,7 @@ const ProductSlider = () => {
   };
 
   return (
-    <div className="relative w-full max-w-md mx-auto">
+    <div className="relative w-full max-w-lg mx-auto mt-12">
       <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-6 shadow-2xl">
         <h3 className="text-2xl font-bold text-white mb-6 text-center">
           Our <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Products</span>
@@ -102,7 +102,7 @@ const ProductSlider = () => {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-64 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-96 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-2xl"></div>
                   <div className="absolute bottom-4 left-4 right-4 text-white">

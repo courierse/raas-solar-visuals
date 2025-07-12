@@ -170,7 +170,7 @@ const Contact = () => {
                   <div className="relative z-10 text-center">
                     <MapPin className="w-16 h-16 text-yellow-400 mx-auto mb-4" />
                     <p className="text-white font-semibold">Interactive Map</p>
-                    <p className="text-blue-200 text-sm">Industrial Area, Sector 5, New Delhi</p>
+                    <p className="text-blue-200 text-sm">279, Khera Chauganpur, Ecotech-3rd, Phase-1, Greater Noida, UTTAR PRADESH, 201306</p>
                   </div>
                   
                   {/* Animated location pin */}
@@ -193,8 +193,8 @@ const Contact = () => {
                     <div>
                       <h4 className="text-white font-semibold mb-1">Address</h4>
                       <p className="text-blue-200">
-                        Industrial Area, Sector 5<br />
-                        New Delhi, India - 110001
+                        279, Khera Chauganpur, Ecotech-3rd, Phase-1, <br />
+                       Greater Noida, UTTAR PRADESH, 201306
                       </p>
                     </div>
                   </div>
@@ -205,8 +205,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="text-white font-semibold mb-1">Phone</h4>
-                      <p className="text-blue-200">+91 123 456 7890</p>
-                      <p className="text-blue-200">+91 098 765 4321</p>
+                      <p className="text-blue-200">+91  9773579770</p>
+                      {/* <p className="text-blue-200">+91 098 765 4321</p> */}
                     </div>
                   </div>
 
@@ -216,8 +216,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="text-white font-semibold mb-1">Email</h4>
+                      <p className="text-blue-200">raasengineer@gmail.com</p>
                       <p className="text-blue-200">info@raasengineers.com</p>
-                      <p className="text-blue-200">sales@raasengineers.com</p>
                     </div>
                   </div>
 
@@ -228,7 +228,6 @@ const Contact = () => {
                     <div>
                       <h4 className="text-white font-semibold mb-1">Business Hours</h4>
                       <p className="text-blue-200">Monday - Saturday: 9:00 AM - 6:00 PM</p>
-                      <p className="text-blue-200">Sunday: Closed</p>
                     </div>
                   </div>
                 </div>

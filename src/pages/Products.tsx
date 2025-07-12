@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Zap, Sun, Settings, Shield, Battery, Cpu } from 'lucide-react';
 import Navbar from '../components/Navbar';
@@ -11,37 +10,37 @@ const Products = () => {
     {
       name: "Main LT Panel",
       description: "High-quality Main Low Tension electrical panels designed for industrial applications with advanced safety features and robust construction.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop",
+      image: "images/lt-panels.jpeg",
       features: ["Up to 3200A rating", "IP65 protection", "Modular design", "Advanced metering"]
     },
     {
       name: "APFC Panel",
       description: "Automatic Power Factor Correction panels that optimize power consumption and reduce electricity costs for industrial facilities.",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=300&fit=crop",
+      image: "images/apfc-panels.png",
       features: ["Automatic switching", "Power factor improvement", "Energy savings", "Microprocessor controlled"]
     },
     {
       name: "Control Panel",
       description: "Advanced control panels for industrial automation, process control, and monitoring applications with user-friendly interfaces.",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=300&fit=crop",
+      image: "images/electric-control-panel.webp",
       features: ["HMI interface", "Remote monitoring", "Data logging", "Alarm systems"]
     },
     {
       name: "Distribution Panel",
       description: "Electrical distribution panels for safe and efficient power distribution in commercial and industrial buildings.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop",
+      image: "images/distributor_panel.jpg",
       features: ["Multiple circuits", "Circuit protection", "Easy maintenance", "Compact design"]
     },
     {
       name: "VFD Panel",
       description: "Variable Frequency Drive panels for precise motor control, energy efficiency, and improved process control.",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=300&fit=crop",
+      image: "images/vfd-control-panel.png",
       features: ["Speed control", "Energy efficient", "Soft starting", "Protection features"]
     },
     {
       name: "AMF Panel",
       description: "Auto Mains Failure panels for automatic generator switching during power outages, ensuring continuous power supply.",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=300&fit=crop",
+      image: "images/amf_panel.webp",
       features: ["Automatic operation", "Generator control", "Load management", "Battery backup"]
     }
   ];
@@ -50,25 +49,25 @@ const Products = () => {
     {
       name: "Solar ACDB",
       description: "Solar AC Distribution Boxes for safe and efficient AC power distribution in solar power systems with advanced protection.",
-      image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=400&h=300&fit=crop",
+      image: "images/acdb_box.webp",
       features: ["AC surge protection", "Isolator switches", "Monitoring capability", "Weather resistant"]
     },
     {
       name: "Solar DCDB",
       description: "Solar DC Distribution Boxes designed for photovoltaic systems with comprehensive protection and monitoring features.",
-      image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=400&h=300&fit=crop",
+      image: "images/dcdb_box.png",
       features: ["DC surge protection", "String monitoring", "Fuse protection", "Remote monitoring"]
     },
     {
       name: "Solar BOS",
       description: "Complete Solar Balance of System components including mounting structures, cables, and protection devices.",
-      image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=400&h=300&fit=crop",
+      image: "images/earthing_solar.jpg",
       features: ["Complete solution", "Quality components", "Easy installation", "Long durability"]
     },
     {
       name: "String Monitoring Panel",
       description: "Advanced solar string monitoring panels for real-time performance tracking and fault detection in solar installations.",
-      image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=400&h=300&fit=crop",
+      image: "images/solar-sting-monitring.webp",
       features: ["Real-time monitoring", "Fault detection", "Performance analytics", "Remote access"]
     }
   ];
@@ -138,7 +137,7 @@ const Products = () => {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute top-4 right-4">

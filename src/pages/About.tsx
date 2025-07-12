@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Shield, Award, Users, Lightbulb, Target, Eye, Heart } from 'lucide-react';
 import Navbar from '../components/Navbar';
@@ -161,37 +160,6 @@ const About = () => {
                 <div>• Maintenance & Support Services</div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Quality & Certifications */}
-      <section className="py-20 bg-gradient-to-b from-slate-900 to-slate-950">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Quality & <span className="text-yellow-400">Certifications</span>
-            </h2>
-            <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-              Our commitment to excellence is reflected in our certifications and quality standards
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-8">
-            {[
-              { name: "ISO 9001:2015", description: "Quality Management" },
-              { name: "ISO 14001:2015", description: "Environmental Management" },
-              { name: "OHSAS 18001", description: "Occupational Health & Safety" },
-              { name: "BIS Certification", description: "Bureau of Indian Standards" }
-            ].map((cert, index) => (
-              <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center hover:bg-white/10 transition-all duration-300">
-                <div className="bg-gradient-to-r from-yellow-500 to-orange-600 p-4 rounded-lg w-fit mx-auto mb-4">
-                  <Award className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-lg font-bold text-white mb-2">{cert.name}</h3>
-                <p className="text-blue-200 text-sm">{cert.description}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>

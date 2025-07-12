@@ -52,11 +52,15 @@ const Index = () => {
           <div className="flex-1 text-white space-y-8 animate-fade-in">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+                {/* <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
                   RAAS
-                </span>
+                </span> */}
                 <br />
-                <span className="text-blue-100">Engineers</span>
+                <span>
+  <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">RAAS</span>{' '}
+  <span className="text-blue-100">Engineers</span>
+</span>
+
               </h1>
               <p className="text-xl lg:text-2xl text-blue-200 font-light">
                 Powering the Future with Advanced Electrical Solutions
@@ -183,7 +187,7 @@ const Index = () => {
                   {
                     icon: <Shield className="w-6 h-6" />,
                     title: "Quality Assurance",
-                    description: "ISO certified manufacturing with rigorous quality control processes"
+                    description: "We offer high-quality products that undergo rigorous testing, all at competitive prices."
                   },
                   {
                     icon: <Lightbulb className="w-6 h-6" />,
@@ -217,7 +221,7 @@ const Index = () => {
               <div className="bg-gradient-to-br from-yellow-500/20 to-orange-500/20 rounded-3xl p-8 backdrop-blur-sm border border-white/10">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="bg-white/10 rounded-xl p-6 text-center">
-                    <div className="text-3xl font-bold text-yellow-400 mb-2">500+</div>
+                    <div className="text-3xl font-bold text-yellow-400 mb-2">700+</div>
                     <div className="text-blue-200">Projects Completed</div>
                   </div>
                   <div className="bg-white/10 rounded-xl p-6 text-center">
@@ -225,7 +229,7 @@ const Index = () => {
                     <div className="text-blue-200">Years Experience</div>
                   </div>
                   <div className="bg-white/10 rounded-xl p-6 text-center">
-                    <div className="text-3xl font-bold text-yellow-400 mb-2">100+</div>
+                    <div className="text-3xl font-bold text-yellow-400 mb-2">1000+</div>
                     <div className="text-blue-200">Happy Clients</div>
                   </div>
                   <div className="bg-white/10 rounded-xl p-6 text-center">
@@ -245,3 +249,4 @@ const Index = () => {
 };
 
 export default Index;
+   
