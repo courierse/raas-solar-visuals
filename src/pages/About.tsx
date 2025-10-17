@@ -55,8 +55,8 @@ const About = () => {
                   <div className="text-center">
                     <div className="bg-white/10 rounded-xl p-6 mb-4">
                       <Award className="w-12 h-12 text-yellow-400 mx-auto mb-3" />
-                      <div className="text-3xl font-bold text-white mb-2">ISO</div>
-                      <div className="text-blue-200 text-sm">Certified Quality</div>
+                      <div className="text-3xl font-bold text-white mb-2">Quality</div>
+                      <div className="text-blue-200 text-sm">Assured Quality Standard</div>
                     </div>
                   </div>
                   <div className="text-center">
